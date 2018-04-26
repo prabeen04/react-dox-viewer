@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import FileViewer from 'react-file-viewer';
-
-const file = 'https://www.waterproofpaper.com/printable-calendar/2018-printable-calendar.pdf';
-const type = 'pdf'
+import Sample from './static/sample.docx';
+const file = Sample;
+const type = 'docx'
 class App extends Component {
   render() {
     return (
