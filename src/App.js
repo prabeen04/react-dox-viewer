@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import FileViewer from 'react-file-viewer';
 
-const file = 'https://cdn-images-1.medium.com/max/2000/1*6eZhQJdQ_t71DRSoSuUhbA.jpeg'
-const type = 'jpeg'
+const file = 'https://www.waterproofpaper.com/printable-calendar/2018-printable-calendar.pdf';
+const type = 'pdf'
 class App extends Component {
   render() {
     return (
