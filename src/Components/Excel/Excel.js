@@ -40,7 +40,7 @@ class Excel extends Component {
                 <h1>Export Excel File</h1>
                 <button onClick={this.handleExcelExport}>Export Excel</button>
                 <ExcelFile>
-                    <ExcelSheet dataSet={multiDataSet} name="Organization" />
+                    <ExcelSheet dataSet={this.state.excelData} name="Organization" />
                 </ExcelFile>
             </div>
         )
