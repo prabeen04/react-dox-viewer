@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import FileViewer from 'react-file-viewer';
+import Excel from './Components/Excel/Excel';
 import Sample from './static/sample.docx';
 import Test from './static/test.pdf'
 const file = Sample;
@@ -9,6 +10,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <Excel/>
        <FileViewer
         fileType={type}
         filePath={file}/>

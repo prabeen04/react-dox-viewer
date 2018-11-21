@@ -1,13 +1,23 @@
 import React, { Component } from 'react'
 
 class Excel extends Component {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    )
-  }
+    constructor(props) {
+        super(props)
+        this.state = {
+
+        }
+    }
+    handleExcelExport = () => {
+        console.log('data')
+    }
+    render() {
+        return (
+            <div>
+                <h1>Export Excel File</h1>
+                <button onClick={this.handleExcelExport}>Export Excel</button>
+            </div>
+        )
+    }
 }
 
 export default Excel;
