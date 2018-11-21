@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { ExcelFile, ExcelSheet } from "react-data-export";
 
 class Excel extends Component {
     constructor(props) {
@@ -38,6 +39,9 @@ class Excel extends Component {
             <div>
                 <h1>Export Excel File</h1>
                 <button onClick={this.handleExcelExport}>Export Excel</button>
+                <ExcelFile>
+                    <ExcelSheet dataSet={multiDataSet} name="Organization" />
+                </ExcelFile>
             </div>
         )
     }
